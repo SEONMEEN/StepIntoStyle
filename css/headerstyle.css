@@ -1,0 +1,61 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.header {
+    background-color: #FDDDE6;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.home-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FFB6C1;
+    /* สีพื้นหลังอ่อนเพื่อเข้ากับ header */
+    color: #FFFFFF;
+    /* สีตัวอักษร */
+    border: none;
+    border-radius: 50%;
+    /* ทำให้ปุ่มกลม */
+    width: 50px;
+    /* กำหนดความกว้าง */
+    height: 50px;
+    /* กำหนดความสูง */
+    display: flex;
+    /* ใช้ Flexbox สำหรับจัดตำแหน่ง */
+    justify-content: center;
+    /* จัดกลางแนวนอน */
+    align-items: center;
+    /* จัดกลางแนวตั้ง */
+    font-size: 24px;
+    /* ขนาดของไอคอน */
+    cursor: pointer;
+    /* เปลี่ยนรูปชี้เมาส์เมื่อโฮเวอร์ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* เงาอ่อน */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    /* เพิ่มการเปลี่ยนแปลงเมื่อโฮเวอร์ */
+}
+
+.home-button:hover {
+    background-color: #FF6F61;
+    /* เปลี่ยนสีเมื่อโฮเวอร์ให้เข้มขึ้น */
+    transform: translateY(-3px);
+    /* เลื่อนปุ่มขึ้นเมื่อโฮเวอร์ */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาเมื่อโฮเวอร์ */
+}
+
+.home-button:active {
+    transform: translateY(1px);
+    /* เลื่อนปุ่มลงเมื่อคลิก */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* คืนเงาเมื่อคลิก */
+}
